@@ -1,0 +1,32 @@
+{
+  "name": "pr09",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "coverage": "nyc npm run tests && nyc report --reporter=lcov",
+    "start": "tsc && node dist/main.js",
+    "watch": "mocha --watch",
+    "tests": "mocha",
+    "doc": "typedoc; touch ./docs/.nojekyll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.16",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^14.14.41",
+    "@types/yargs": "^16.0.1",
+    "chai": "^4.3.4",
+    "coveralls": "^3.1.0",
+    "mocha": "^8.3.2",
+    "nyc": "^15.1.0",
+    "ts-node": "^9.1.1",
+    "tsc-watch": "^4.2.9",
+    "typedoc": "^0.20.35",
+    "typescript": "^4.2.4",
+    "yargs": "^16.2.0"
+  }
+}
