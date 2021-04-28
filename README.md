@@ -1,8 +1,10 @@
 # Informe Practica 9
 
-# Introduccion
+## Introduccion
 
-# Ejercicio 1
+En esta practica vamos a hacer uso de la libreria ```fs```, ```spawn```, ```stream``` y otros para manejar ficheros e informacion de los mismos. Asi como lo que sucede en la call stack, API stack y Task Queue.
+
+## Ejercicio 1
 
 ![Cap](Captura1.png)
 
@@ -240,3 +242,6 @@ Son objetos que se usan en la funcion access, tenemos diferentes tipos:
     R_OK: Nos dice si tenemos permisos de lectura del path.
     W_OK: Nos dice si tenemos permisos de escritura del path.
     X_OK: Nos dice si tenemos permisos de ejecucuion del path.
+
+
+## Ejercicio 2
