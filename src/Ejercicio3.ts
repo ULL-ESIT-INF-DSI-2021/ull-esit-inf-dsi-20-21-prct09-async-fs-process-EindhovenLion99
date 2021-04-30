@@ -20,7 +20,7 @@ function userWatcher(name: string) {
     }
     setTimeout(() => {
       watching = false;
-  }, 100);
+    }, 100);
   })
   console.log("Esperando cambios en algun fichero...");
 }
@@ -31,13 +31,15 @@ yargs.command({
   builder: {
     name: {
       describe: 'Nombre del Usuario',
-      demandOption: true,
+      demandOption: false,
       type: 'string',
     },
   },
   handler(argv) {
     if (typeof argv.name === 'string') {
       userWatcher(argv.name);
+    } else {
+      userWatcher("");
     }
   },
 });
